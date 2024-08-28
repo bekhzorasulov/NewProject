@@ -1,0 +1,108 @@
+.father {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    column-gap: 1.7rem;
+}
+
+.name h3 {
+    font-size: 1.3rem;
+    line-height: 1;
+    font-weight: 500;
+    color: white;
+}
+
+.name p {
+    font-size: 1.1rem;
+    line-height: 1;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.personal-info h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: white;
+}
+
+.personal-info p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #cfcfcf;
+}
+
+.girlname {
+    display: flex;
+    align-items: center;
+    column-gap: 1.7rem;
+}
+
+.girlname h3 {
+    font-size: 1.3rem;
+    line-height: 1;
+    font-weight: 500;
+    color: #48556a;
+}
+
+.girlname p {
+    font-size: 1.1rem;
+    line-height: 1;
+    font-weight: 500;
+    color: #48556a;
+}
+
+.girl-info h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: #48556a;
+}
+
+.girl-info p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #48556a;
+}
+
+.child {
+    border: 0.1rem solid;
+    flex-grow: 1;
+    padding: 2.6rem 3.2rem 3.2rem 3.2rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.child:nth-child(1) {
+    background-color: #733fc8;
+    grid-column: 1/3;
+}
+
+.child:nth-child(2) {
+    background-color: #48556a;
+    grid-column: 3/4;
+}
+
+.child:nth-child(3) {
+    background-color: bisque;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.child:nth-child(4) {
+    background-color: bisque;
+    grid-column: 1/2;
+}
+
+.child:nth-child(5) {
+    background-color: #19202d;
+    grid-column: 2/4;
+}
