@@ -1,8 +1,11 @@
+@import "./global.css";
 .father {
-    margin-top: 100px;
+    margin: 100px auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .name {
@@ -26,6 +29,7 @@
 }
 
 .personal-info h3 {
+    margin-top: 1.8rem;
     font-size: 2rem;
     font-weight: 600;
     line-height: 2.4rem;
@@ -46,6 +50,7 @@
 }
 
 .girlname h3 {
+    margin-top: 1rem;
     font-size: 1.3rem;
     line-height: 1;
     font-weight: 500;
@@ -60,6 +65,7 @@
 }
 
 .girl-info h3 {
+    margin-top: 1.8rem;
     font-size: 2rem;
     font-weight: 600;
     line-height: 2.4rem;
@@ -105,4 +111,14 @@
 .child:nth-child(5) {
     background-color: #19202d;
     grid-column: 2/4;
+}
+
+@media (max-width: 77rem) {
+    .father {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 2rem;
+    }
+    .child {}
 }
