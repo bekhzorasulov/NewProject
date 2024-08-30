@@ -113,12 +113,29 @@
     grid-column: 2/4;
 }
 
-@media (max-width: 77rem) {
+@media (max-width: 32.7rem) {
     .father {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 1rem;
-        gap: 2rem;
+        grid-template-columns: repeat(1, 1rf);
+        gap: 2.4rem;
     }
-    .child {}
+    .child:nth-child(1) {
+        background-color: #733fc8;
+        grid-row: 1/3;
+    }
+    .child:nth-child(2) {
+        background-color: #48556a;
+        grid-row: 3/4;
+    }
+    .child:nth-child(3) {
+        background-color: bisque;
+        grid-row: 6/7;
+    }
+    .child:nth-child(4) {
+        background-color: bisque;
+        grid-row: 4/5;
+    }
+    .child:nth-child(5) {
+        background-color: #19202d;
+        grid-row: 5/6;
+    }
 }
