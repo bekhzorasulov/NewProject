@@ -1,141 +1,121 @@
 @import "./global.css";
 .father {
-    margin: 100px auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  grid-template-areas: "dc dc jw kw" "jh pa pa kw";
 }
 
 .name {
-    display: flex;
-    align-items: center;
-    column-gap: 1.7rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1.7rem;
 }
 
 .name h3 {
-    font-size: 1.3rem;
-    line-height: 1;
-    font-weight: 500;
-    color: white;
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 500;
+  color: white;
 }
 
 .name p {
-    font-size: 1.1rem;
-    line-height: 1;
-    font-weight: 500;
-    color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .personal-info h3 {
-    margin-top: 1.8rem;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 2.4rem;
-    color: white;
+  margin-top: 1.8rem;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: white;
 }
 
 .personal-info p {
-    font-size: 1.3rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: #cfcfcf;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #cfcfcf;
 }
 
 .girlname {
-    display: flex;
-    align-items: center;
-    column-gap: 1.7rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1.7rem;
 }
 
 .girlname h3 {
-    margin-top: 1rem;
-    font-size: 1.3rem;
-    line-height: 1;
-    font-weight: 500;
-    color: #48556a;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 500;
+  color: #48556a;
 }
 
 .girlname p {
-    font-size: 1.1rem;
-    line-height: 1;
-    font-weight: 500;
-    color: #48556a;
+  font-size: 1.1rem;
+  line-height: 1;
+  font-weight: 500;
+  color: #48556a;
 }
 
 .girl-info h3 {
-    margin-top: 1.8rem;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 2.4rem;
-    color: #48556a;
+  margin-top: 1.8rem;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: #48556a;
 }
 
 .girl-info p {
-    font-size: 1.3rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: #48556a;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #48556a;
 }
 
 .child {
-    border: 0.1rem solid;
-    flex-grow: 1;
-    padding: 2.6rem 3.2rem 3.2rem 3.2rem;
-    border: none;
-    border-radius: 0.5rem;
+  border: 0.1rem solid;
+  flex-grow: 1;
+  padding: 2.6rem 3.2rem 3.2rem 3.2rem;
+  border: none;
+  border-radius: 0.5rem;
 }
 
 .child:nth-child(1) {
-    background-color: #733fc8;
-    grid-column: 1/3;
+  background-color: #733fc8;
+  grid-area: dc;
 }
 
 .child:nth-child(2) {
-    background-color: #48556a;
-    grid-column: 3/4;
+  background-color: #48556a;
+  grid-area: jw;
 }
 
 .child:nth-child(3) {
-    background-color: bisque;
-    grid-column: 4/5;
-    grid-row: 1/3;
+  grid-area: kw;
 }
 
 .child:nth-child(4) {
-    background-color: bisque;
-    grid-column: 1/2;
+  background-color: bisque;
+  grid-area: jh;
 }
 
 .child:nth-child(5) {
-    background-color: #19202d;
-    grid-column: 2/4;
+  background-color: #19202d;
+  grid-area: pa;
 }
 
 @media (max-width: 32.7rem) {
-    .father {
-        grid-template-columns: repeat(1, 1rf);
-        gap: 2.4rem;
-    }
-    .child:nth-child(1) {
-        background-color: #733fc8;
-        grid-row: 1/3;
-    }
-    .child:nth-child(2) {
-        background-color: #48556a;
-        grid-row: 3/4;
-    }
-    .child:nth-child(3) {
-        background-color: bisque;
-        grid-row: 6/7;
-    }
-    .child:nth-child(4) {
-        background-color: bisque;
-        grid-row: 4/5;
-    }
-    .child:nth-child(5) {
-        background-color: #19202d;
-        grid-row: 5/6;
-    }
+  .father {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    grid-template-areas: "dc" "jw" "kw" "jh" "pa";
+  }
 }
